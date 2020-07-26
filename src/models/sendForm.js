@@ -1,90 +1,82 @@
 const sendForm = () => {
-    const
-      errorMessage = 'Ошибка!',
-      loadMessage = 'Загрузка...',
-      successMessage = 'Мы скоро свяжимся с вами! ',
-      fixMessage = 'В тексте присутствуют недопустимые символы',
+
+    const 
+      errorMessage = 'Что-то пошло не так',
+      successMessage = 'Мы скоро с Вами свяжемся!',
   
-      form = document.querySelectorAll('form'),
-      input = document.querySelectorAll('input'),
+    form = document.querySelectorAll('form'),
+    userName = document.getElementsByName('user_name'),
+    userPhone = document.getElementsByName('user_phone'),
   
-      usephone1 = document.getElementById('phone_1'),
-      usephone2 = document.getElementById('phone_2'),
-      usephone3 = document.getElementById('phone_3'),
-  
-      name1 = document.getElementById('name_1'),
-      name2 = document.getElementById('name_2');
     
+    statusMessage = document.createElement('div');
+    statusMessage.style.cssText = 'font=size: 2rem;';
   
-      
-      const startMessage = document.createElement('div');
-      startMessage.style.cssText = 'font-size: 2rem;';
-      
-      const post = (body) =>{
-        return fetch('./server.php', {
+    const postData = (body) => {
+      return fetch('./server.php', {
           method: 'POST',
           headers: {
-              'Form-Data': 'application/json'
+              'Content-Type': 'application/json'
           },
-          credentials: 'include',
-          body: body
+          body: JSON.stringify(body)
       });
-    };
-      
-      
-      form.forEach((elem) =>{
-        elem.addEventListener('submit', (event) => {
-          event.preventDefault();
-  
-        const elem = event.target;
-        elem.appendChild(startMessage);
-           
-           
-      
-        const cheak = () =>{
-        input.forEach( (item) => {
-  
-        if(item.tagName.toLowerCase() === 'input') {
-            item.value = '';
-            }
-        });
-      };
-  
-       const fixPhone = (num) => {
-          const phone = /^[+]?\d+$/;
-          return !!(num && num.match(phone));
-          };
-            
-        const fixText = (text) => {
-          const messag = /[^a-zа-я\s]+$/;
-          return !!(text && text.match(messag));
-          };
-    
-    if(fixPhone(usephone1.value) || fixPhone(usephone2.value) || fixPhone(usephone3.value) ||
-              fixText(name2.value) ||  fixText(name1.value) ){
-        post(new FormData(elem))
-        .then((response) => {
-        if(response.status !== 200){
-        throw new Error('стутус не равен 200');
-        }
-      startMessage.textContent = successMessage;
-      cheak();
-                
-      })
-      .catch((error) => {
-      startMessage.textContent = errorMessage;
-      console.error(error);
-      cheak();
-      });
-      }else{
-      post(new FormData())
-  
-      .then(() => {
-      startMessage.textContent = fixMessage;
-        cheak();
-        });
-        }
-      });
-    });
   };
-  export default sendForm;
+  
+  
+    userName.forEach((event) => {
+        event.addEventListener('input', function()  {
+            this.value = this.value.replace(/([^А-ЯЁa-яё\s])|([A-Za-z])/gi, '');
+        });
+    });
+  
+    userPhone.forEach((event) => {
+        event.addEventListener('input', function() {
+            this.value = this.value.replace(/([^+\d])| /g, '');
+        });
+    });
+
+
+  
+  
+    form.forEach((elem) => {
+        elem.addEventListener('submit', (event) => {
+            event.preventDefault(); 
+            elem.appendChild(statusMessage);
+  
+            const formData = new FormData(elem);
+            let body = {};
+            formData.forEach((val, key) => {
+                body[key] = val;
+            });
+         
+  
+  
+            const cheak = () =>{
+              input.forEach( (item) => {
+        
+              if(item.tagName.toLowerCase() === 'input') {
+                  item.value = '';
+                  }
+              });
+            };
+  
+            postData(body)
+            .then((response) => {
+                cheak();
+                removeMessage();
+                if (response.status !== 200) {
+                    throw new Error('статус не равен 200');
+                }
+                statusMessage.textContent = successMessage;
+        
+            })
+            .catch((error) => {
+                cheak();
+                statusMessage.textContent = errorMessage;
+            });
+        });
+    });
+  
+   
+  };
+export default sendForm;
