@@ -1,419 +1,570 @@
 <!DOCTYPE html>
 <html lang="ru">
-
 <head>
-	<meta charset="UTF-8">
-	<meta http-equiv="X-UA-Compatible" content="IE=edge">
-	<meta name="viewport" content="width=device-width, initial-scale=1">
-	<title>Услуги по 3D моделированию</title>
-	<link rel="stylesheet" href="./css/bootstrap.min.css">
-	<link rel="stylesheet" href="./css/style.min.css">
-	<link rel="apple-touch-icon" sizes="180x180" href="./images/favicon/apple-touch-icon.png">
-	<link rel="icon" type="image/png" sizes="32x32" href="./images/favicon/favicon-32x32.png">
-	<link rel="icon" type="image/png" sizes="16x16" href="./images/favicon/favicon-16x16.png">
-	<link rel="manifest" href="./images/favicon/site.webmanifest">
-	<link rel="mask-icon" href="./images/favicon/safari-pinned-tab.svg" color="#5bbad5">
-	<meta name="msapplication-TileColor" content="#b91d47">
-	<meta name="theme-color" content="#ffffff">
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="apple-touch-icon" sizes="180x180" href="./img/favicon/apple-touch-icon.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="./img/favicon/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="./img/favicon/favicon-16x16.png">
+    <link rel="manifest" href="./img/favicon/site.webmanifest">
+    <link rel="mask-icon" href="./img/favicon/safari-pinned-tab.svg" color="#5bbad5">
+    <meta name="msapplication-TileColor" content="#603cba">
+    <meta name="theme-color" content="#ffffff">
+    <!-- Стили -->
+    <!-- Bootstrap core CSS -->
+    <link href="css/bootstrap.min.css" rel="stylesheet">
+    <!-- Custom styles for this template -->
+    <link href="css/style.css" rel="stylesheet">
+
+    <title>Септик-погреб</title>
+
+
 </head>
 
 <body>
 
+<header>
+    <div class="container">
+        <div class="row">
+            <div class="col-lg-3 col-md-3 col-sm-3 col-xs-12">
+                <div class="logo">
+                    <img src="img/main/drop.svg" alt="logo">
+                    <span>BIO-GLO</span>
+                    <p>производственно-строительная<br>компания</p>
+                </div>
+            </div>
+            <div class="col-lg-6 col-md-6 col-sm-6 col-xs-12">
+                <div class="name">
+                    <p>Производим бетонные кольца и устанавливаем септики <br> под ключ в Республики Татарстан</p>
+                </div>
+            </div>
+            <div class="col-lg-3 col-md-3 col-sm-3 col-xs-12">
+                <div class="contacts">
+                    <p>+7 <img src="" alt="" style="width: 0px">(800) <img src="" alt="" style="width: 0px">555-<img
+                            src="" alt="" style="width: 0px">64-47</p>
+                    <a class="call-btn" href="#">Перезвоните мне</a>
+                </div>
+            </div>
+        </div>
+    </div>
+</header>
+
 <main>
-	<header>
-		<div class="container">
-			<div class="row justify-content-between main-header">
-				<div class="col-md-2 col-sm-4 col-4">
-					<div class="logo">
-						<img class="logo-img" src="images/3dglo.png" alt="...">
-
-					</div>
-				</div>
-				<div class="col-md-4 col-md-offset-6 col-sm-4 col-sm-offset-2 col-5 col-offset-0">
-					<div class="media phone-media">
-						<div class="media-left media-middle">
-							<img class="media-object" src="images/phone.svg" alt="...">
-						</div>
-						<div class="media-body">
-							<small>Есть вопросы? Звоните!</small>
-							<p class="phone">8 843 249-00-64</p>
-						</div>
-					</div>
-
-				</div>
-				<div class="col-md-1 col-sm-2 col-3">
-					<div class="menu">
-						<img src="images/menu.svg" alt=""><br>
-						<small>Меню</small>
-					</div>
-				</div>
-			</div>
-		</div>
-	</header>
-
-	<h1>Услуги по 3D моделированию</h1>
-	<h2>полный спектр услуг</h2>
-	<div class="timer">
-		<div class="timer-title">Оставьте заявку сейчас и получите дизайн интерьера 25кв<sup>2</sup> бесплатно!*
-		</div>
-		<div class="timer-action">
-			До конца акции осталось
-		</div>
-		<div class="timer-numbers" id="timer">
-			<span id="timer-hours">00</span>
-			<span>:</span>
-			<span id="timer-minutes">00</span>
-			<span>:</span>
-			<span id="timer-seconds">00</span>
-		</div>
-	</div>
-	<form id="form1" name="user_form" class="main-form">
-		<div class="main-form-input container">
-			<div class="row">
-				<div class="col-12 col-lg-4">
-					<input type="text" class="form-name" id="form1-name" name="user_name" placeholder="Ваше имя" required>
-				</div>
-				<div class="col-12 col-lg-4">
-					<input type="email" class="form-email" id="form1-email" name="user_email" placeholder="E-mail">
-				</div>
-				<div class="col-12 col-lg-4">
-					<input type="tel" class="form-phone" id="form1-phone" name="user_phone" placeholder="Номер телефона" required>
-				</div>
-			</div>
-		</div>
-		<div class="container">
-			<div class="row justify-content-center">
-				<button class="btn form-btn" type="submit">Оставить заявку!</button>
-			</div>
-		</div>
-	</form>
-	<small>*Мы гарантируем конфидициальность передаваемых данных</small>
-	<br>
-	<a href="#service-block"><img src="images/scroll.svg" alt=""></a>
+    <div class="container">
+        <h1>производим и устанавливаем бетонные <br> септики под ключ</h1>
+        <h2>Которые служат более полувека и не требуют откачки до 20 лет <span class="line"></span></h2>
+        <div class="row">
+            <div class="col-lg-6 col-md-6 col-sm-12">
+                <div class="block-color">
+                    <h4>Монтаж колец самогрузом - бесплатно!</h4>
+                </div>
+                <div class="block-color">
+                    <h3>гарантия 2 года на каждый монтаж</h3>
+                </div>
+                <p class="installation">Монтируем под ключ:</p>
+                <div class="img-box wow fadeInDown" data-wow-delay="0.1s">
+                    <img src="img/main/1.png" alt="1">
+                </div>
+                <div class="img-box wow fadeInDown" data-wow-delay="0.2s">
+                    <img src="img/main/2.png" alt="2">
+                </div>
+                <div class="img-box wow fadeInDown" data-wow-delay="0.3s">
+                    <img src="img/main/3.png" alt="3">
+                </div>
+                <div class="img-box wow fadeInDown" data-wow-delay="0.4s">
+                    <img src="img/main/4.png" alt="4">
+                </div>
+            </div>
+            <div class="col-lg-4 col-lg-offset-1 col-md-4 col-md-offset-1 col-sm-12">
+                <form class="main-form text-center wow fadeInRight">
+                    <h4>Заказать консультацию!</h4>
+                    <p>Не знаете как построить канализацию? <br> Закажите <span>бесплатную</span> консультацию <br> мы
+                        подскажем и подготовим проект и смету</p>
+                    <label for="phone_3">Ваш телефон для получения скидки</label>
+                    <input class="phone-user" type="text" id="phone_3" name="user_phone" placeholder="+7(___)___-__-__"
+                           required>
+                    <button class="button main-form-btn" name="submit" type="submit">Получить консультацию</button>
+                    <p class="small">Заполнения заявки Вас ни к чему не обязывает! <br> Вы сможете отказаться в любой
+                        момент</p>
+                    <p class="stock">Осталось 3 места на май !</p>
+                </form>
+            </div>
+        </div>
+    </div>
 </main>
 
+<section class="section-form">
+    <div class="container">
+        <div class="row">
+            <div class="col-lg-6 col-md-6 col-sm-12 wow fadeInLeft">
+                <h2>Получите расчёт стоимости <br> <span>за 2000 руб.</span> <strong>бесплатно,</strong><br>а так-же
+                    скидку на септик!</h2>
+                <p>Оставьте заявку на расчет стоимости септика и мы зафиксируем за вами сезонные цены. <br><br>По своему
+                    номеру телефона вы сможете получить скидку. <br> Это позволит сэкономить вам <strong>до 10 000
+                        рублей</strong><br> при заказе септиков.</p>
+            </div>
+            <div class="col-lg-4 col-lg-offset-1 col-md-4 col-md-offset-1 col-sm-12 wow fadeInRight"
+                 data-wow-delay="0.2s">
+                <form class="capture-form text-center">
+                    <label for="name_2">Как к вам обращаться</label>
+                    <input type="text" id="name_2" name="user_name" placeholder="Ваше имя" required>
+                    <label for="phone_2">Ваш телефон для получения скидки</label>
+                    <input class="phone-user" type="text" id="phone_2" name="user_phone" placeholder="+7(___)___-__-__"
+                           required>
+                    <button class="button capture-form-btn" name="submit" type="submit">Получить расчет и скидку
+                    </button>
+                    <p class="small">Вы получите расчет стоимости с учетом выбора <br>подходящего объема септика. типа
+                        грунта, <br> расположения объектов на участке, уровня грунтовых <br> вод, типа фундамента дома и
+                        еще 7 параметров</p>
+                </form>
+            </div>
+        </div>
+    </div>
+</section>
 
-<menu>
-	<a class="close-btn" href="#close">&times;</a>
-	<ul>
-		<li><a href="#service-block">Наши услуги</a></li>
-		<li><a href="#portfolio">Портфолио</a></li>
-		<li><a href="#calc">Калькулятор стоимости</a></li>
-		<li><a href="#command">Наша команда</a></li>
-		<li><a href="#connect">Остались вопросы?</a></li>
-	</ul>
-</menu>
+<section class="constructor">
+    <div class="container">
+        <div class="row">
+            <h2>Онлайн конструктор септика</h2>
+            <div class="col-lg-6 col-md-6 col-sm-6">
+                <div class="panel-group" id="accordion" role="tablist" aria-multiselectable="true">
+
+                    <div class="panel panel-default panel-one wow fadeInLeft">
+                        <div class="panel-heading" role="tab" id="headingOne">
+                            <h4 class="panel-title">
+                                <a role="button" data-toggle="collapse" data-parent="#accordion" href="#collapseOne"
+                                   aria-expanded="true" aria-controls="collapseOne">
+                                    <span class="link-text">1. Тип септика</span>
+                                </a>
+                            </h4>
+                        </div>
+                        <div id="collapseOne" class="panel-collapse collapse in" role="tabpanel"
+                             aria-labelledby="headingOne">
+                            <div class="panel-body">
+                                <img class="type-septic" src="img/constructor/type-septic.png" alt="septic">
+                                <div class="onoffswitch">
+                                    <input type="checkbox" name="onoffswitch" class="onoffswitch-checkbox"
+                                           id="myonoffswitch" checked>
+                                    <label class="onoffswitch-label" for="myonoffswitch">
+                                        <span class="onoffswitch-inner"></span>
+                                        <span class="onoffswitch-switch"></span>
+                                    </label>
+                                </div>
+                                <img class="type-septic" src="img/constructor/type-septic-two.png" alt="septic">
+                                <p>камерный</p>
+                                <a class="button construct-btn collapsed" data-toggle="collapse"
+                                   data-parent="#accordion" href="#collapseTwo"><span>Следующий шаг</span></a>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="panel panel-default panel-two wow fadeInRight" data-wow-delay="0.1s">
+                        <div class="panel-heading" role="tab" id="headingTwo">
+                            <h4 class="panel-title">
+                                <a class="collapsed" role="button" data-toggle="collapse" data-parent="#accordion"
+                                   href="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">
+                                    <span class="link-text">2. Диаметр и количество колец</span>
+                                </a>
+                            </h4>
+                        </div>
+                        <div id="collapseTwo" class="panel-collapse collapse" role="tabpanel"
+                             aria-labelledby="headingTwo">
+                            <div class="panel-body">
+
+                                <div class="title-text">первый колодец (приемный)</div>
+                                <div class="select-box">
+                                    <p><strong>Диаметр</strong></p>
+                                    <select class="form-control expand">
+                                        <option>1.4 метра</option>
+                                        <option>2 метра</option>
+                                    </select>
+                                </div>
+                                <div class="select-box">
+                                    <p><strong>Количество колец</strong></p>
+                                    <select class="form-control expand">
+                                        <option>1 штука</option>
+                                        <option>2 штуки</option>
+                                        <option>3 штуки</option>
+                                    </select>
+                                </div>
+
+                                <div class="title-text">второй колодец (дренажный)</div>
+                                <div class="select-box">
+                                    <p><strong>Диаметр</strong></p>
+                                    <select class="form-control expand">
+                                        <option>1.4 метра</option>
+                                        <option>2 метра</option>
+                                    </select>
+                                </div>
+                                <div class="select-box">
+                                    <p><strong>Количество колец</strong></p>
+                                    <select class="form-control expand">
+                                        <option>1 штука</option>
+                                        <option>2 штуки</option>
+                                        <option>3 штуки</option>
+                                    </select>
+                                </div>
+                                <a class="button construct-btn" data-toggle="collapse" data-parent="#accordion"
+                                   href="#collapseThree"><span>Следующий шаг</span></a>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="panel panel-default panel-three wow fadeInLeft" data-wow-delay="0.2s">
+                        <div class="panel-heading" role="tab" id="headingThree">
+                            <h4 class="panel-title">
+                                <a class="collapsed" role="button" data-toggle="collapse" data-parent="#accordion"
+                                   href="#collapseThree" aria-expanded="false" aria-controls="collapseThree">
+                                    <span class="link-text">3. Наличие днища колодца</span>
+                                </a>
+                            </h4>
+                        </div>
+                        <div id="collapseThree" class="panel-collapse collapse" role="tabpanel"
+                             aria-labelledby="headingThree">
+                            <div class="panel-body">
+                                </p>
+
+                                <div class="onoffswitch">
+                                    <input type="checkbox" name="onoffswitch-two" class="onoffswitch-checkbox"
+                                           id="myonoffswitch-two" checked>
+                                    <label class="onoffswitch-label" for="myonoffswitch-two">
+                                        <span class="onoffswitch-inner"></span>
+                                        <span class="onoffswitch-switch"></span>
+                                    </label>
+                                </div>
+                                <img class="bottom-septic-img" src="img/constructor/bottom-septic.png" alt="bs">
+                                <a class="button construct-btn" data-toggle="collapse" data-parent="#accordion"
+                                   href="#collapseFour" aria-expanded="false" aria-controls="collapseFour"><span>Следующий шаг</span></a>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="panel panel-default panel-four wow fadeInRight" data-wow-delay="0.3s">
+                        <div class="panel-heading" role="tab" id="headingFour">
+                            <h4 class="panel-title">
+                                <a class="collapsed" role="button" data-toggle="collapse" data-parent="#accordion"
+                                   href="#collapseFour" aria-expanded="false" aria-controls="collapseFour">
+                                    <span class="link-text">4. Расстояние от септика до дома</span>
+                                </a>
+                            </h4>
+                        </div>
+                        <div id="collapseFour" class="panel-collapse collapse" role="tabpanel"
+                             aria-labelledby="headingFour">
+                            <div class="panel-body">
+                                <p>Введите расстояние до дома</p>
+                                <input type="text">
+                                <button class="button construct-btn call-btn">Получить расчет и скидку</button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="col-lg-6 col-md-6 col-sm-6 wow fadeInRight">
+                <img class="tank-img" src="img/constructor/septic-tank.png" alt="tank">
+                <input id="calc-result" type="text" placeholder="примерная стоимость" disabled>
+            </div>
+
+        </div>
+    </div>
+</section>
+
+<section class="sentence">
+    <div class="container">
+        <div class="text-center">
+            <h2>Акции и спецпредложения</h2>
+
+            <div class="row">
+                <div class="col-xs-12 col-sm-6 col-md-4">
+                    <div class="shadow-block wow fadeInDown">
+                        <h3>Однокамерный септик под ключ</h3>
+                        <div class="img-block">
+                            <img src="img/sentence/1.png" alt="1">
+                        </div>
+                        <button class="discount-btn button sentence-btn">Заказать со скидкой</button>
+                    </div>
+                </div>
+
+                <div class="col-xs-12 col-sm-6 col-md-4">
+                    <div class="shadow-block wow fadeInDown" data-wow-delay="0.1s">
+                        <h3>Погреб под ключ</h3>
+                        <div class="img-block">
+                            <img src="img/sentence/2.png" alt="2">
+                        </div>
+                        <button class="discount-btn button sentence-btn">Заказать со скидкой</button>
+                    </div>
+                </div>
+
+                <div class="col-xs-12 col-sm-6 col-md-4">
+                    <div class="shadow-block wow fadeInDown" data-wow-delay="0.2s">
+                        <h3>Колодец под ключ</h3>
+                        <div class="img-block">
+                            <img src="img/sentence/3.png" alt="3">
+                        </div>
+                        <button class="discount-btn button sentence-btn">Заказать со скидкой</button>
+                    </div>
+                </div>
+
+                <div class="col-xs-12 col-sm-6 col-md-4  visible-sm-block">
+                    <div class="shadow-block wow fadeInDown">
+                        <h3>Погреб колодец под ключ</h3>
+                        <div class="img-block">
+                            <img src="img/sentence/4.png" alt="4">
+                        </div>
+                        <button class="discount-btn button sentence-btn">Узнать цену со скидкой</button>
+                    </div>
+                </div>
+
+                <div class="col-xs-12 col-sm-6 col-md-4 hidden">
+                    <div class="shadow-block wow fadeInDown" data-wow-delay="0.1s">
+                        <h3>Погреб+скважина под ключ</h3>
+                        <div class="img-block">
+                            <img src="img/sentence/5.png" alt="5">
+                        </div>
+                        <button class="discount-btn button sentence-btn">Узнать цену со скидкой</button>
+                    </div>
+                </div>
+
+                <div class="col-xs-12 col-sm-6 col-md-4 hidden">
+                    <div class="shadow-block wow fadeInDown" data-wow-delay="0.2s">
+                        <h3>Септик накопительный под ключ</h3>
+                        <div class="img-block">
+                            <img src="img/sentence/6.png" alt="6">
+                        </div>
+                        <button class="discount-btn button sentence-btn">Узнать цену со скидкой</button>
+                    </div>
+                </div>
+
+                <button class="button add-sentence-btn">Больше...</button>
+            </div>
 
 
-<div id="service-block" class="service">
-	<div class="container">
-		<h2>Наши услуги</h2>
-		<div class="underline"></div>
-		<div class="row service-header">
-			<div class="col-12 col-lg-4 service-header-tab active">Дизайн <span>интерьера</span></div>
-			<div class="col-12 col-lg-4 service-header-tab">Дизайн <span>экстерьера</span></div>
-			<div class="col-12 col-lg-4 service-header-tab">Визуальная <span>анимация</span></div>
-		</div>
+        </div>
+    </div>
+</section>
 
-		<div class="service-tab row">
-			<div class="service-outer col-md-6 col-sm-6 col-12">
-				<div class="service-inner">
-					<div class="service-text">
-						<p>Услуга, направленная на разработку интерьеров помещений с целью обеспечить удобство и
-							эстетически приятное ощущение у человека при нахождении в помещении</p>
-						<button class="btn form-btn popup-btn">Оставить заявку!</button>
-					</div>
-				</div>
-			</div>
-			<div class="col-md-6 col-sm-6">
-				<img src="images/service/service-1.png" alt="">
-			</div>
-		</div>
+<section class="gauging">
+    <div class="container">
+        <div class="row">
+            <div class="col-lg-5 col-md-5 col-sm-5">
+                <img class="gauging-img" src="img/gauging/magazine.png" alt="magazine">
+            </div>
+            <div class="col-lg-7 col-md-7 col-sm-7">
+                <h2>Закажите бесплатный замер</h2>
+                <p>Наш специалист бесплатно приедет, рассчитает<br>септик именно для вашего участка и дома! <br><br>А
+                    также зафиксируйте специальные цены <br><strong>на монтаж септиков со скидкой 15%</strong></p>
+                <p class="gauging-bold">Выезд специалиста вас ни к чему не обязывает!</p>
+                <button class="check-btn button gauging-button">Получить чек-лист и скидку</button>
+                <span>Вы можете воспользоваться скидкой в течении 30 дней.</span>
+            </div>
+        </div>
+    </div>
+</section>
+
+<section class="questions">
+    <div class="container">
+        <h2>Часто задаваемые вопросы</h2>
+        <div class="panel-group wow slideInDown" id="accordion-two" role="tablist" aria-multiselectable="true">
+            <div class="panel panel-default">
+                <div class="panel-heading" role="tab" id="headingOne-two">
+                    <h4 class="panel-title">
+                        <a role="button" data-toggle="collapse" data-parent="#accordion-two" href="#collapseOne-two"
+                           aria-expanded="true" aria-controls="collapseOne-two">
+                            Существует ли вероятность того, что подводящий трубопровод замерзнет?
+                        </a>
+                    </h4>
+                </div>
+                <div id="collapseOne-two" class="panel-collapse collapse in" role="tabpanel"
+                     aria-labelledby="headingOne">
+                    <div class="panel-body">
+                        Вероятность того, что вода в подводящем трубопроводе замерзнет, отсутствует, потому что она
+                        находится в трубе лишь на протяжении небольшого промежутка времени, а все остальное время труба
+                        пуста. При прокладке трубопровода, предназначенного для хоз. бытового стока, необходимо при
+                        монтаже соблюдать правильный уклон трассы. Для трубы диаметром 110 мм перепад должен составлять
+                        20 мм на 1 метр, для трубы диаметром 160 мм перепад должен составлять 8 мм на 1 метр.
+                    </div>
+                </div>
+            </div>
+            <div class="panel panel-default">
+                <div class="panel-heading" role="tab" id="headingTwo-two">
+                    <h4 class="panel-title">
+                        <a class="collapsed" role="button" data-toggle="collapse" data-parent="#accordion-two"
+                           href="#collapseTwo-two" aria-expanded="false" aria-controls="collapseTwo-two">
+                            Помогают ли предлагаемые вами устройства достичь в загородном доме комфорта городского
+                            уровня?
+                        </a>
+                    </h4>
+                </div>
+                <div id="collapseTwo-two" class="panel-collapse collapse" role="tabpanel"
+                     aria-labelledby="headingTwo-two">
+                    <div class="panel-body">
+                        Нет, не может. Армированное изделие и марка бетона М-350, позволяют выдерживать значительные
+                        нагрузки, включая землетрясение до 5,5 баллов.
+                    </div>
+                </div>
+            </div>
+            <div class="panel panel-default">
+                <div class="panel-heading" role="tab" id="headingThree-two">
+                    <h4 class="panel-title">
+                        <a class="collapsed" role="button" data-toggle="collapse" data-parent="#accordion-two"
+                           href="#collapseThree-two" aria-expanded="false" aria-controls="collapseThree-two">
+                            Погибают ли бактерии в холодный период при долгом простое системы?
+                        </a>
+                    </h4>
+                </div>
+                <div id="collapseThree-two" class="panel-collapse collapse" role="tabpanel"
+                     aria-labelledby="headingThree-two">
+                    <div class="panel-body">
+                        Да. Иногда зимний монтаж предпочтительней. Большегрузная техника по мороженому грунту не
+                        продавит и не испортит дорогу или ландшафт участка, да и грунтовая вода отходит. Весной грунт
+                        даст усадку и уплотнится, и вам останется сделать лишь ландшафтное планирование.
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+<section class="director">
+    <div class="container">
+        <div class="row flex-center">
+            <div class="col-lg-6 col-md-6">
+                <h2>Кабаев Дмитрий</h2>
+                <p>Коммерческий директор компании "BIO-GLO"</p>
+                <span>"Мы всегда находим общий язык с клиентами, любим, когда нам задают вопросы. Ведь именно из них мы понимаем, что волнует клиентов больше всего."</span>
 
 
-		<div class="service-tab row d-none">
-			<div class="col-md-6 col-sm-6">
-				<img src="images/service/service-2.png" alt="">
-			</div>
-			<div class="service-outer col-md-6 col-sm-6 col-12">
-				<div class="service-inner">
-					<p>Услуга, направленная на разработку дизайна прилегающих элементов зданий, а также дизайн самих
-						зданий, позволяющая обеспечить удобство людей при нахождении на территории</p>
-					<button class="btn form-btn popup-btn">Оставить заявку!</button>
-
-				</div>
-			</div>
-
-		</div>
+            </div>
+            <div class="col-lg-6 col-md-6">
+                <p class="question">Остались вопросы?</p>
+                <p>Введите свой вопрос и в течении 15 минут я свяжусь с вами!</p>
+                <form class="director-form">
+                    <input type="text" name="user_quest" placeholder="Введите свой вопрос" required>
+                    <button class="button director-btn consultation-btn" name="submit" type="submit">Получить
+                        консультацию
+                    </button>
+                </form>
 
 
-		<div class="service-tab row  d-none">
-			<div class="service-outer col-md-6 col-sm-6 col-12">
-				<div class="service-inner">
-					<p>Услуга, направленная на разработку дизайна с анимацией, дизайн интерьера и экстерьера</p>
-					<button class="btn form-btn popup-btn">Оставить заявку!</button>
+            </div>
+        </div>
+    </div>
+</section>
 
-				</div>
-			</div>
-			<div class="col-md-6 col-sm-6">
-				<img src="images/service/service-3.png" alt="">
-			</div>
-		</div>
+<header>
+    <div class="container">
+        <div class="row">
+            <div class="col-lg-3 col-md-3 col-sm-3 col-xs-12">
+                <div class="logo">
+                    <img src="img/main/drop.svg" alt="logo">
+                    <span>BIO-GLO</span>
+                    <p>производственно-строительная<br>компания</p>
+                </div>
+            </div>
+            <div class="col-lg-6 col-md-6 col-sm-6 col-xs-12">
+                <div class="name">
+                    <p>Производим бетонные кольца и устанавливаем септики <br>под ключ в Республики Татарстан</p>
+                </div>
+            </div>
+            <div class="col-lg-3 col-md-3 col-sm-3 col-xs-12">
+                <div class="contacts">
+                    <p>+7 <img src="" alt="" style="width: 0px">(800) <img src="" alt="" style="width: 0px">555-<img
+                            src="" alt="" style="width: 0px">64-47</p>
+                    <a class="call-btn" href="#">Перезвоните мне</a>
+                </div>
+            </div>
+        </div>
+    </div>
+</header>
 
 
-	</div>
+<!-- Всплывающие окна -->
+<div class="popup-call popup">
+    <div class="popup-dialog">
+        <div class="popup-content">
+            <!-- <div class="popup-form"> -->
+            <form class="capture-form text-center">
+                <span class="circle"><button class="popup-close">&times;</button></span>
+                <label for="name_1">Как к вам обращаться</label>
+                <input type="text" id="name_1" name="user_name" placeholder="Ваше имя" required>
+                <label for="phone_1">Ваш телефон для получения скидки</label>
+                <input class="phone-user" type="text" id="phone_1" name="user_phone" placeholder="+7(___)___-__-__"
+                       required>
+                <button class="button capture-form-btn" name="submit" type="submit">Получить расчет и скидку</button>
+                <p class="small">Вы получите расчет стоимости с учетом выбора <br>подходящего объема септика. типа
+                    грунта, <br> расположения объектов на участке, уровня грунтовых <br> вод, типа фундамента дома и еще
+                    7 параметров</p>
+            </form>
+            <!-- </div> -->
+        </div>
+    </div>
 </div>
 
-<div id="portfolio" class="portfolio">
-	<div class="container">
-		<h2>Портфолио</h2>
-		<div class="underline"></div>
-		<ul class="portfolio-content" id="all-progects">
-			<li class="portfolio-item portfolio-item-active"><img src="images/portfilio/portfolio-01.jpg"
-																														alt="portfolio"></li>
-			<li class="portfolio-item"><img src="images/portfilio/portfolio-04.jpg" alt="portfolio"></li>
-			<li class="portfolio-item"><img src="images/portfilio/portfolio-06.jpg" alt="portfolio"></li>
-			<li class="portfolio-item"><img src="images/portfilio/portfolio-07.jpg" alt="portfolio"></li>
-			<li class="portfolio-item"><img src="images/portfilio/portfolio-08.jpg" alt="portfolio"></li>
-			<li class="portfolio-item"><img src="images/portfilio/portfolio-10.jpg" alt="portfolio"></li>
-			<a href="#" class="portfolio-btn prev" id="arrow-left"></a>
-			<a href="#" class="portfolio-btn next" id="arrow-right"></a>
-			<ul class="portfolio-dots">
-			
-			
-			</ul>
-		</ul>
-	</div>
+<div class="popup-discount popup">
+    <div class="popup-dialog">
+        <div class="popup-content">
+            <!-- <div class="popup-form"> -->
+            <form class="capture-form text-center">
+                <span class="circle"><button class="popup-close">&times;</button></span>
+                <label for="name_11">Как к вам обращаться</label>
+                <input type="text" id="name_11" name="user_name" placeholder="Ваше имя" required>
+                <label for="phone_11">Ваш телефон для получения скидки</label>
+                <input class="phone-user" type="text" id="phone_11" name="user_phone" placeholder="+7(___)___-__-__"
+                       required>
+                <button class="button capture-form-btn" name="submit" type="submit">Заказать со скидкой</button>
+                <p class="small">Вы получите расчет стоимости с учетом выбора <br>подходящего объема септика. типа
+                    грунта, <br> расположения объектов на участке, уровня грунтовых <br> вод, типа фундамента дома и еще
+                    7 параметров</p>
+            </form>
+            <!-- </div> -->
+        </div>
+    </div>
 </div>
 
-<div id="calc" class="calc">
-	<div class="container">
-		<h2>Рассчитать стоимость</h2>
-		<div class="underline"></div>
-		<div class="row">
-			<div class="col-lg-6 d-none d-lg-block flex">
-				<img src="images/calc.jpg" alt="">
-			</div>
-			<div class="col-lg-6 col-12 flex">
-				<div class="calc-block">
-					<select class="calc-item calc-type" required>
-						<option class="calc-option-title" value="">Выберите тип объекта*</option>
-						<option value="1">Интерьер Квартиры</option>
-						<option value="1.4">Интерьер Частного дома</option>
-						<option value="2">Интерьер Офиса</option>
-					</select>
-					<input type="text" min="1" step="1" class="calc-item calc-square"
-								 placeholder="Общая площадь*">
-					<input type="text" min="1" step="1" class="calc-item calc-count"
-								 placeholder="Количество помещений">
-					<input type="text" min="1" step="1" class="calc-item calc-day"
-								 placeholder="Срок исполнения (в днях)">
-					<div class="calc-total">ИТОГО: <span id="total">0</span></div>
-					<div class="calc-mini">* стоимость по умолчанию расчитывается на 1 помещение и срок 10 дней <br>
-						**точная стоимость и сроки работ обговариваются индивидуально, после
-						ознакомления с техническим заданием.
-					</div>
-				</div>
-
-			</div>
-		</div>
-	</div>
+<div class="popup-check popup">
+    <div class="popup-dialog">
+        <div class="popup-content">
+            <!-- <div class="popup-form"> -->
+            <form class="capture-form text-center">
+                <span class="circle"><button class="popup-close">&times;</button></span>
+                <label for="name_12">Как к вам обращаться</label>
+                <input type="text" id="name_12" name="user_name" placeholder="Ваше имя" required>
+                <label for="phone_12">Ваш телефон для получения скидки</label>
+                <input class="phone-user" type="text" id="phone_12" name="user_phone" placeholder="+7(___)___-__-__"
+                       required>
+                <button class="button capture-form-btn" name="submit" type="submit">Получить чек-лист и скидку</button>
+                <p class="small">Вы получите расчет стоимости с учетом выбора <br>подходящего объема септика. типа
+                    грунта, <br> расположения объектов на участке, уровня грунтовых <br> вод, типа фундамента дома и еще
+                    7 параметров</p>
+            </form>
+            <!-- </div> -->
+        </div>
+    </div>
 </div>
 
-<div id="companies" class="companies">
-	<div class="container">
-		<h2>Нам доверяют</h2>
-		<div class="underline"></div>
-		<div class="companies-wrapper">
-			<div class="companies-hor">
-				<div class="companies-hor-item"><img src="images/companies/companies-1.png" alt=""></div>
-				<div class="companies-hor-item"><img src="images/companies/companies-2.png" alt=""></div>
-				<div class="companies-hor-item"><img src="images/companies/companies-3.png" alt=""></div>
-				<div class="companies-hor-item"><img src="images/companies/companies-4.png" alt=""></div>
-				<div class="companies-hor-item"><img src="images/companies/companies-5.png" alt=""></div>
-				<div class="companies-hor-item"><img src="images/companies/companies-6.png" alt=""></div>
-				<div class="companies-hor-item"><img src="images/companies/companies-7.png" alt=""></div>
-			</div>
-		</div>
-	</div>
+<div class="popup-consultation popup">
+    <div class="popup-dialog">
+        <div class="popup-content">
+            <!-- <div class="popup-form"> -->
+            <form class="capture-form text-center">
+                <span class="circle"><button class="popup-close">&times;</button></span>
+                <label for="name_13">Как к вам обращаться</label>
+                <input type="text" id="name_13" name="user_name" placeholder="Ваше имя" required>
+                <label for="phone_13">Ваш телефон для получения скидки</label>
+                <input class="phone-user" type="text" id="phone_13" name="user_phone" placeholder="+7(___)___-__-__"
+                       required>
+                <button class="button capture-form-btn" name="submit" type="submit">Получить консультацию</button>
+                <p class="small">Вы получите расчет стоимости с учетом выбора <br>подходящего объема септика. типа
+                    грунта, <br> расположения объектов на участке, уровня грунтовых <br> вод, типа фундамента дома и еще
+                    7 параметров</p>
+            </form>
+            <!-- </div> -->
+        </div>
+    </div>
 </div>
+<script src = './dist/main.js'></script>
 
-<div id="command" class="command">
-	<div class="container">
-		<h2>Наша команда</h2>
-		<div class="underline"></div>
-		<div class="row">
-			<div class="col-md-4 col-sm-6 col-12">
-				<img class="command__photo" src="images/command/command-1.jpg"
-						 data-img="images/command/command-1a.jpg" alt="">
-				<div class="description">Quentin Tarantino</div>
-				<p>Директор компании</p>
-			</div>
-			<div class="col-md-4 col-sm-6 col-12">
-				<img class="command__photo" src="images/command/command-2.jpg"
-						 data-img="images/command/command-2a.jpg" alt="">
-				<div class="description">Parker Posey</div>
-				<p>Финансовый директор</p>
-			</div>
-			<div class="col-md-4 col-sm-6 col-12">
-				<img class="command__photo" src="images/command/command-3.jpg"
-						 data-img="images/command/command-3a.jpg" alt="">
-				<div class="description">Gonzalo Higuaín</div>
-				<p>Инженер модельер</p>
-			</div>
-			<div class="col-md-4 col-sm-6 col-12">
-				<img class="command__photo" src="images/command/command-4.jpg"
-						 data-img="images/command/command-4a.jpg" alt="">
-				<div class="description">Liam Payne</div>
-				<p>3D дизайнер</p>
-			</div>
-			<div class="col-md-4 col-sm-6 col-12">
-				<img class="command__photo" src="images/command/command-5.jpg"
-						 data-img="images/command/command-5a.jpg" alt="">
-				<div class="description">Bristol Palin</div>
-				<p>Дизайнер интерьеров</p>
-			</div>
-			<div class="col-md-4 col-sm-6 col-12">
-				<img class="command__photo" src="images/command/command-6.jpg"
-						 data-img="images/command/command-6a.jpg" alt="">
-				<div class="description">Dominic Monaghan</div>
-				<p>Дизайнер ландшафтов</p>
-			</div>
-		</div>
-		<div class="quote">
-			<img class="cov-left" src="images/command/cov-1.png" alt="">
-			<div class="description">Ты - то, что ты делаешь!</div>
-			<p>То, что мы делаем, определяет то, кем мы являемся. Люди чувствуют старание и чувствуют
-				неаккуратность.
-				Это<br> связано с уважением друг к другу, так что небрежность - это неуважение к самому себе.</p>
-			<span>Ислам Куаныш</span>
-			<p>Директор</p>
-			<img class="cov-right" src="images/command/cov-2.png" alt="">
-		</div>
-	</div>
-</div>
 
-<div id="connect" class="connect">
-	<div class="container">
-		<h2>Остались вопросы?</h2>
-		<div class="underline"></div>
-		<div class="description">Задайте их в форме ниже и наши специалисты свяжуться с Вами!</div>
-		<div class="row">
-			<div class="col-md-8 col-sm-8 col-12">
-				<form id="form2" name="user_form" class="footer-form">
-					<div class="footer-form-input">
-						<div class="row">
-							<div class="col-md-4 col-md-offset-0 col-sm-12 col-sm-offset-0">
-								<input class="top-form" id="form2-name" type="text" name="user_name"
-											 placeholder="Ваше имя" required>
-							</div>
-							<div class="col-md-4 col-md-offset-0 col-sm-12 col-sm-offset-0">
-								<input class="top-form form-email" id="form2-email" type="email" name="user_email"
-											 placeholder="E-mail">
-							</div>
-							<div class="col-md-4 col-md-offset-0 col-sm-12 col-sm-offset-0">
-								<input class="top-form form-phone" id="form2-phone" type="tel" name="user_phone"
-											 placeholder="Номер телефона" required>
-							</div>
-							<div class="col-md-12 col-sm-12 col-12">
-								<input class="mess" id="form2-message" name="user_message"
-											 placeholder="Ваше сообщение">
-							</div>
-						</div>
-					</div>
-
-					<div class="justify-content-center">
-						<div>
-							<button class="btn form-btn" type="submit">Оставить заявку!</button>
-						</div>
-					</div>
-				</form>
-			</div>
-
-			<div class="col-md-4 col-sm-4 col-12">
-				<div class="connect-adress">
-					<img src="images/connect/phone.svg" alt="">
-					<p>+ 7 843 249 00 64</p>
-				</div>
-				<div class="connect-adress">
-					<img src="images/connect/whatsapp.svg" alt="">
-					<p>+ 7 843 249 00 64</p>
-				</div>
-				<div class="connect-adress">
-					<img src="images/connect/letter.svg" alt="">
-					<p>manager@glo-academy.ru</p>
-				</div>
-				<div class="connect-adress">
-					<img src="images/connect/skype.svg" alt="">
-					<p>skype: glo-academy</p>
-				</div>
-				<div class="connect-adress">
-					<img src="images/connect/tele.svg" alt="">
-					<p>telegram: glo-academy</p>
-				</div>
-				<p>График работы: с 9-00 до 18-00. Пн.-Пт.</p>
-			</div>
-		</div>
-	</div>
-</div>
-
-<footer>
-	<div class="container">
-		<div class="row justify-content-between">
-			<div class="col-md-2 col-sm-2 col-12">
-				<a href="#">Главная</a><br>
-				<a href="#">Тарифы</a><br>
-			</div>
-			<div class="col-md-2 col-sm-3 col-12">
-				<a href="#">Вопросы-ответы</a><br>
-				<a href="#">Личный кабинет</a><br>
-			</div>
-			<div class="col-md-3 col-sm-4 col-12">
-				<a href="#">Новости</a><br>
-				<a href="#">Договор публичной оферты</a><br>
-			</div>
-			<div class="col-md-3 col-md-offset-2 col-sm-3 col-sm-offset-0 col-12 col-offset-0">
-				<p>Мы в социальных сетях:</p>
-				<a href=""><img src="images/footer/face.svg" alt=""></a>
-				<a href=""><img src="images/footer/google.svg" alt=""></a>
-				<a href=""><img src="images/footer/insta.svg" alt=""></a>
-			</div>
-		</div>
-		<div class="line"></div>
-		<div class="row">
-			<div class="col-md-6 col-sm-6 col-12 d-flex align-items-center">
-				<p>2020. Все права защищены</p>
-			</div>
-			<div class="col-md-6 col-sm-6 col-12 web">
-				<img src="./images/footer/academy.png" alt="">
-			</div>
-		</div>
-	</div>
-</footer>
-
-<div class="popup">
-	<div class="popup-content">
-		<button class="popup-close">&times;</button>
-		<div class="main-form">
-			<h3>Введите свои данные для связи с нами!</h3>
-			<form id="form3" name="user_form">
-				<div>
-					<input type="text" class="form-name" id="form3-name" name="user_name" placeholder="Ваше имя"
-								 required>
-				</div>
-				<div>
-					<input type="tel" class="form-phone" id="form3-phone" name="user_phone"
-								 placeholder="Ваш номер телефона" required>
-				</div>
-				<div>
-					<input type="email" class="form-email" id="form3-email" name="user_email"
-								 placeholder="Ваш E-mail">
-				</div>
-				<button class="btn form-btn" type="submit">Оставить заявку!</button>
-			</form>
-		</div>
-	</div></div>
-</div>
-<script src="script.js"></script>
 </body>
 </html>
