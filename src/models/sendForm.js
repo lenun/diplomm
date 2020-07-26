@@ -7,10 +7,11 @@ const sendForm = () => {
     form = document.querySelectorAll('form'),
     userName = document.getElementsByName('user_name'),
     userPhone = document.getElementsByName('user_phone'),
+    input = document.querySelectorAll('input'),
   
     
     statusMessage = document.createElement('div');
-    statusMessage.style.cssText = 'font=size: 2rem;';
+    statusMessage.style.cssText = 'font=size: 3rem;';
   
     const postData = (body) => {
       return fetch('./server.php', {
@@ -62,17 +63,17 @@ const sendForm = () => {
   
             postData(body)
             .then((response) => {
-                cheak();
-                removeMessage();
                 if (response.status !== 200) {
                     throw new Error('статус не равен 200');
                 }
                 statusMessage.textContent = successMessage;
+                cheak();
         
             })
             .catch((error) => {
-                cheak();
+              
                 statusMessage.textContent = errorMessage;
+                cheak();
             });
         });
     });
