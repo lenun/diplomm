@@ -1,8 +1,8 @@
 const addAdvice = () => {
     const  
     popupConsultation = document.querySelector('.popup-consultation'),
-    consultationBtn = document.querySelector('.consultation-btn'),
-    director = document.querySelector('.director-form');
+    consultationBtn = document.querySelector('.consultation-btn');
+
     
     consultationBtn.addEventListener('click', (event) => {
       event.preventDefault()
