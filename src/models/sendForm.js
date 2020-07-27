@@ -7,6 +7,7 @@ const sendForm = () => {
     form = document.querySelectorAll('form'),
     userName = document.getElementsByName('user_name'),
     userPhone = document.getElementsByName('user_phone'),
+    userQuest = document.getElementsByName('user_quest'),
     input = document.querySelectorAll('input'),
   
     
@@ -35,6 +36,7 @@ const sendForm = () => {
             this.value = this.value.replace(/([^+\d])| /g, '');
         });
     });
+ 
 
 
   

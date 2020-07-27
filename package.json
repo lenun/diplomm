@@ -8,15 +8,15 @@
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/lenun/diplom.git"
+    "url": "git+https://github.com/lenun/diplomm.git"
   },
   "keywords": [],
   "author": "",
   "license": "ISC",
   "bugs": {
-    "url": "https://github.com/lenun/diplom/issues"
+    "url": "https://github.com/lenun/diplomm/issues"
   },
-  "homepage": "https://github.com/lenun/diplom#readme",
+  "homepage": "https://github.com/lenun/diplomm#readme",
   "devDependencies": {
     "webpack": "^4.44.0",
     "webpack-cli": "^3.3.12"
