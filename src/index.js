@@ -7,7 +7,7 @@ import addBlock from './models/addBlock';
 import discount from './models/discount';
 import checkList from './models/checkList';
 import addAdvice from './models/addAdvice';
-
+import calculator from './models/calculator';
 
 
 modal();
@@ -17,3 +17,4 @@ addBlock();
 discount();
 checkList();
 addAdvice();
+calculator();
